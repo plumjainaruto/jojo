@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensome Clone</title>
+
+    <!-- ✅ Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* ✅ Custom Styles */
+        body {
+            background-color: #f8f9fc;
+            font-family: Arial, sans-serif;
+        }
+        .divider {
+            border-top: 1px solid #ddd;
+            margin: 40px 0;
+        }
+        /* ✅ Hero Section */
+        .hero {
+            background-color: #002B4E;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .divider {
+            border-top: 1px solid #ddd;
+            margin: 40px 0;
+        }
+        /* ✅ ปรับลิงก์ให้เหมือนปุ่มแต่ไม่มีพื้นหลัง */
+        .btn-image {
+            display: inline-block;
+            border: none;
+            background: none;
+            padding: 0;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .btn-image img {
+            width: auto;
+            max-width: 200px;
+        }
+
+        /* ✅ Navbar */
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+            font-size: 16px; /* ขนาดตัวอักษร */
+            font-weight: 500; /* ความหนาของตัวอักษร */
+            padding: 10px 20px; /* ระยะห่างระหว่างเมนู */
+            position: relative; /* ใช้ทำเส้นขีดใต้ */
+            transition: all 0.3s ease-in-out; /* ทำให้เปลี่ยนสีลื่นขึ้น */
+        }
+        /* ✅ เพิ่มเส้นขีดใต้เมนูเมื่อ Hover */
+        .navbar-dark .navbar-nav .nav-link::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background-color: white; /* สีขาว */
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.3s ease-in-out;
+        }
+        /* ✅ เมื่อ Hover ให้เส้นขยายเต็มความกว้างของข้อความ */
+        .navbar-dark .navbar-nav .nav-link:hover::after {
+        width: 100%;
+     }
+    </style>
+</head>
+<body>
+
+    <!-- ✅ Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002B4E;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="IMG/Logo_white.png" alt="Ensome Logo" width="120">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" style="margin-right: 600px;">
+                    <li class="nav-item"><a class="nav-link" href="index.html" style="color: white;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home 2.html" style="color: white; margin-left: 50px;">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="่home3.html" style="color: white; margin-left: 50px;">Elements</a></li>
+                </ul>
+
+                <!-- ✅ ใช้ <a> แทน <button> เพื่อลบปุ่มสีฟ้า -->
+                <a href="#" class="btn-image">
+                    <img src="IMG/Button.png" alt="Watch the demo">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ✅ Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Find true power in your data with Ensome</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+
+            <!-- ✅ ใช้ <a> และ .btn-image เพื่อลบพื้นหลังปุ่ม -->
+            <a href="#" class="btn-image">
+                <img src="IMG/button_fill.png" alt="Watch the demo">
+            </a>
+            <a href="#" class="btn-image">
+                <img src="IMG/button_outline.png" alt="Watch the demo">
+            </a>
+        </div>
+    </section>
+
+    <!-- ✅ Content Section 1 -->
+    <section style="padding: 80px 0; background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="text-dark fw-bold mb-3">The newest business analytics platform</h2>
+                    <div class="underline"></div>
+                    <p class="text-muted mb-3">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                    
+                    <!-- ✅ ลบพื้นหลังปุ่ม -->
+                    <a href="#" class="btn-image">
+                        <img src="IMG\Learn more blue.png" alt="Learn more" style="margin-left: -35px;">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <img src="IMG/01_img_10.png" class="img-fluid" alt="Team Meeting">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Content Section 2 -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="IMG/02_img_11.png" class="img-fluid border border-pink" alt="Team Collaboration">
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="text-dark fw-bold mb-3">Radically new solutions for data</h2>
+                    <div class="underline"></div>
+                    <p class="text-muted mb-3">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+
+                    <!-- ✅ ใช้ <a> และ .btn-image แทน -->
+                    <a href="#" class="btn-image">
+                        <img src="IMG\Learn more blue.png" alt="Learn more" style="margin-left: -35px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+ 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .numbers-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        .numbers-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #007bff; /* สีฟ้าสำหรับหัวข้อ */
+        }
+        .numbers-section .number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #007bff; /* สีฟ้าสำหรับตัวเลข */
+        }
+        .numbers-section .label {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #6c757d; /* สีเทาจางๆ สำหรับข้อความย่อย */
+        }
+        .benefits-section {
+    padding: 60px 0;
+    }
+
+    .benefits-img {
+        width: 100%; /* ให้รูปเต็มกรอบ */
+        max-width: 50000px; /* จำกัดขนาดรูป */
+    }
+
+    .benefits-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+        max-width: 500px; /* จำกัดขนาดข้อความให้เท่ากับรูป */
+    }
+
+    .benefit-item {
+        margin-bottom: 20px; /* เว้นช่องไฟระหว่างแต่ละหัวข้อ */
+    }
+
+    .benefits-icon img {
+        width: 24px; /* ปรับขนาดไอคอน */
+     height: auto;
+        margin-right: 10px;
+}
+
+        .divider {
+            border-top: 1px solid #ddd;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Numbers Section -->
+    <section class="numbers-section">
+        <div class="container">
+            <h1 class="mb-4 font-weight-bold">Ensome in numbers</h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="label">Data analytics performed by Ensome</div>
+                    <div class="number">220</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="label">Data management performed by Ensome</div>
+                    <div class="number">390</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="label">Customers are satisfied with Ensome’s work</div>
+                    <div class="number">834+</div>
+                </div>
+                <div class="col-md-2">
+                    <div class="label">Projects implemented by Ensome</div>
+                    <div class="number">1830+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+
+   <!-- Benefits Section -->
+<section class="benefits-section">
+    <div class="container">
+        <div class="row">
+            <!-- รูปภาพ -->
+            <div class="col-md-6">
+                <img src="IMG/img_15.png" alt="Benefits of Ensome" class="benefits-img" style="width: 840px; margin-left: -310px;">
+            </div>
+
+            <!-- ข้อความ -->
+            <div class="col-md-6 benefits-text">
+                <h2 class="mb-4 font-weight-bold">The benefits of Ensome</h2>
+                <div class="underline"></div>
+
+                <div class="benefit-item">
+                    <h3>
+                        <span class="benefits-icon">
+                            <img src="IMG/01_icon_brain_circuit.png">
+                        </span>
+                        Machine learning
+                    </h3>
+                    <p class="text-muted">
+                        At zero eos et accusamus et iusto odio dignissimos ducimus qui blanditis praesentium
+                        voluptatum deleniti atque corrupti quos dolores. Totam rem aperiam, eaque ipsa quae ab
+                        lib inventore veritatis et quasi architecto.
+                    </p>
+                </div>
+
+                <div class="benefit-item">
+                    <h3>
+                        <span class="benefits-icon">
+                            <img src="IMG/02_icon_arrow_trending_lines.png">
+                        </span>
+                        Embed analytics
+                    </h3>
+                    <p class="text-muted">
+                        At zero eos et accusamus et iusto odio dignissimos ducimus qui blanditis praesentium
+                        voluptatum deleniti atque corrupti quos dolores. Totam rem aperiam, eaque ipsa quae ab
+                        lib inventore veritatis et quasi architecto.
+                    </p>
+                </div>
+
+                <div class="benefit-item">
+                    <h3>
+                        <span class="benefits-icon">
+                            <img src="IMG/Vector.png">
+                        </span>
+                        Access control
+                    </h3>
+                    <p class="text-muted">
+                        At zero eos et accusamus et iusto odio dignissimos ducimus qui blanditis praesentium
+                        voluptatum deleniti atque corrupti quos dolores. Totam rem aperiam, eaque ipsa quae ab
+                        lib inventore veritatis et quasi architecto.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!--What our customers say-->
+        <title>Testimonials Section</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+        <style>
+            body {
+                background-color: #ffffff; /* ทำให้หน้าทั้งหมดเป็นสีขาว */
+                font-family: Arial, sans-serif;
+            }
+            .testimonial-section {
+                background-color: #F0F9FF; /* เปลี่ยนสีพื้นหลังเฉพาะแถบนี้ */
+                padding: 50px 0;
+            }
+            h2 {
+                color: #007bff;
+            }
+            .testimonial-card {
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .testimonial-card:hover {
+                transform: translateY(-5px);
+            }
+            .testimonial-image {
+                width: 100%; 
+                height: 100%; 
+                object-fit: cover; 
+                border-radius: 10px;
+            }
+            .nav-buttons {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            .nav-buttons button {
+                background-color: #d0e4ff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin: 0 5px;
+                cursor: pointer;
+                transition: background-color 0.2s;
+            }
+            .nav-buttons button:hover {
+                background-color: #F0F9FF;
+            }
+            
+            .underline {
+                width: 50px;
+                height: 3px;
+                background-color: #007bff;
+                margin-bottom: 30px;
+            }   
+        </style>
+    </head>
+    <body>
+    
+    <div class="testimonial-section"> <!-- แถบนี้เท่านั้นที่เป็นสี #F0F9FF -->
+        <div class="container text-center">
+            <h2 class="mb-12 font-weight-bold">What our customers say</h2>
+            <div class="underline"></div>
+            
+            <div class="row justify-content-center">
+                <!-- Testimonial 1 -->
+                <div class="col-md-5 mb-3">
+                    <div class="testimonial-card">
+                        <img src="IMG/reviews card_1.png" alt="Alex Bern" class="testimonial-image">
+                    </div>
+                </div>
+    
+                <!-- Testimonial 2 -->
+                <div class="col-md-5 mb-3">
+                    <div class="testimonial-card">
+                        <img src="IMG/reviews card_2.png" alt="Ruben Chifundo" class="testimonial-image">
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <button>&larr;</button>
+                <button>&rarr;</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
+    <title>Testimonials Section</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+        <style>
+            body {
+                background-color: #ffffff; /* ทำให้หน้าทั้งหมดเป็นสีขาว */
+                font-family: Arial, sans-serif;
+            }
+            .testimonial-section {
+                background-color: #F0F9FF; /* เปลี่ยนสีพื้นหลังเฉพาะแถบนี้ */
+                padding: 50px 0;
+            }
+            h2 {
+                color: #000000;
+                text-align: left;
+            }
+            .testimonial-card {
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .testimonial-card:hover {
+                transform: translateY(-5px);
+            }
+            .testimonial-image {
+                width: 100%; 
+                height: 100%; 
+                object-fit: cover; 
+                border-radius: 10px;
+            }
+            .nav-buttons {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                position: absolute;
+                right: 410px; /* ปรับให้ลูกศรอยู่ที่มุมขวา */
+                top: 2340px; /* ปรับให้ลูกศรอยู่ที่มุมบน */
+
+            }
+            .nav-buttons button {
+                background-color: #d0e4ff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin: 0 5px;
+                cursor: pointer;
+                transition: background-color 0.2s;
+            }
+            .nav-buttons button:hover {
+                background-color: #F0F9FF;
+            }
+        </style>
+    
+
+
+    <!--Our pricing-->
+    <title>Pricing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .pricing-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+        .pricing-card h3 {
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .blog img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .blog-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .underline {
+            width: 50px;
+            height: 3px;
+            background-color: #007bff;
+            margin: left;
+        }
+        h2 {
+            font-weight: bold;
+        }
+        .price-container {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        .text-muted {
+            font-size: 14px;
+        }
+        .pricing-card ul {
+            padding: 0;
+            list-style: none;
+        }
+        .pricing-card li {
+            margin-bottom: 10px;
+        }
+        
+    </style>
+
+<div class="container mt-5 text-center">
+    <h2>Our pricing</h2>
+    <div class="underline"></div>
+
+    <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-primary me-2">Monthly</button>
+        <button class="btn btn-light">Yearly</button>
+    </div>
+
+    <div class="row mt-4 justify-content-center">
+        <div class="col-md-3 d-flex">
+            <div class="pricing-card w-100">
+                <h5>Starter</h5>
+                <h3>Free</h3>
+                <p class="mt-4">Trial plan for starters</p>
+                <div class="d-grid gap-3">
+                    <button class="btn btn-primary">Get started</button>
+                </div>
+                <ul class="mt-3">
+                    <li class="d-flex align-items-center">
+                        <img src="IMG\fluent_checkmark-12-filled.png" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>For small teams - 5 users</span>
+                    </li>
+
+                    <li class="d-flex align-items-center">
+                        <img src="IMG\fluent_checkmark-12-filled.png" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Community support</span>
+                    </li>
+
+                    <li class="d-flex align-items-center">
+                        <img src="IMG\fluent_checkmark-12-filled.png" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Individual data - 20GB</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+            <div class="pricing-card w-100">
+                <h5>Professional</h5>
+                <div class="price-container">
+                    <h3>$20</h3>
+                    <p class="text-muted mb-0">per editor/month</p>
+                </div>
+                <p>For users who want more</p>
+                <div class="d-grid gap-3">
+                    <button class="btn btn-primary">Get started</button>
+                </div>
+                <ul class="mt-3">
+                    <li class="d-flex align-items-center">
+                    <img src="IMG\fluent_checkmark-12-filled.png" style="width: 20px; height: 20px; margin-right: 10px;">
+                <span>For small teams - 15 users</span>
+                </li>
+
+                <li class="d-flex align-items-center">
+                    <img src="IMG\fluent_checkmark-12-filled.png" style="width: 20px; height: 20px; margin-right: 10px;">
+                <span>Individual support</span>
+                </li>
+
+                <li class="d-flex align-items-center">
+                <img src="IMG\fluent_checkmark-12-filled.png" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Individual data - 60GB</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+            <div class="pricing-card w-100">
+                <h5>Organization</h5>
+                <div class="price-container">
+                    <h3>$50</h3>
+                    <p class="text-muted mb-0">per editor/month</p>
+                </div>
+                <p>The best solution for Pro</p>
+                <div class="d-grid gap-3">
+                    <button class="btn btn-primary">Get started</button>
+                </div>
+                <ul class="mt-3">
+                    <li class="d-flex align-items-center">
+                        <img src="IMG\fluent_checkmark-12-filled.png" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>For big teams - unlimited</span>
+                    </li>
+
+                    <li class="d-flex align-items-center">
+                        <img src="IMG\fluent_checkmark-12-filled.png" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Individual support</span>
+                    </li>
+
+                    <li class="d-flex align-items-center">
+                        <img src="IMG\fluent_checkmark-12-filled.png" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Individual support</span>
+                    </li>
+
+                    <li class="d-flex align-items-center">
+                        <img src="IMG\fluent_checkmark-12-filled.png" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Individual data - unlimited</span>
+                    </li>
+
+                    <li class="d-flex align-items-center">
+                        <img src="IMG\fluent_checkmark-12-filled.png" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Data history</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mt-5">Ensome blog</h2>
+    <div class="underline"></div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-3 blog">
+            <img src="IMG/img_1.png" alt="Blog 1">
+            <p class="text-muted">22 June 2022</p>
+            <p class="blog-title">Staffing software: key capabilities and top products</p>
+            <a href="#">Read more →</a>
+        </div>
+        <div class="col-md-3 blog">
+            <img src="IMG/img_2.png" alt="Blog 2">
+            <p class="text-muted">22 June 2022</p>
+            <p class="blog-title">2022 software development trends explained with benefits</p>
+            <a href="#">Read more →</a>
+        </div>
+        <div class="col-md-3 blog">
+            <img src="IMG/img_3.png" alt="Blog 3">
+            <p class="text-muted">22 June 2022</p>
+            <p class="blog-title">Business analysis helps you in finance</p>
+            <a href="#">Read more →</a>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!--โลโก้ปิดท้าย-->
+<style>
+    .logo {
+        max-width: 900px; /* ขนาดของโลโก้ */
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px; /* ระยะห่างจากขอบล่าง */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+</style>
+<body>
+    <img src="IMG\08_clients logos section.png" alt="Logo" class="logo">
+</body>
+
+<!--Contact Informatino-->
+<title>Contact Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* พื้นหลัง */
+        .contact-section {
+            background-color: #F1F6FA;
+            padding: 60px 0;
+        }
+
+        /* หัวข้อหลัก */
+        .contact-title {
+            font-weight: bold;
+            font-size: 28px;
+        }
+
+        /* เส้นสีฟ้าด้านล่างหัวข้อ */
+        .contact-title::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #007bff;
+            margin-top: 8px;
+        }
+
+        /* ข้อความคำอธิบาย */
+        .contact-text {
+            color: #6c757d;
+        }
+
+        /* ไอคอน */
+        .contact-info i {
+            color: #007bff;
+            margin-right: 8px;
+        }
+
+        /* ฟอร์ม */
+        .contact-form input, .contact-form textarea {
+            border: none;
+            border-bottom: 1px solid #adb5bd;
+            border-radius: 0;
+            background: transparent;
+            padding: 8px;
+            width: 100%;
+            margin-bottom: 20px;
+            outline: none;
+        }
+
+        /* ปุ่ม */
+        .btn-send {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 30px;
+            border-radius: 5px;
+        }
+
+        .btn-send:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <!-- ฝั่งซ้าย: ข้อมูลติดต่อ -->
+            <div class="col-md-6">
+                <h2 class="contact-title">Contact information</h2>
+                <p class="contact-text">Fill up the form and our Team will get back to you with 25 hours.</p>
+
+                <div class="contact-info mt-4">
+                    <p><i class="bi bi-envelope-fill"><img src="IMG\icon_mail.png" style="width: 20px; height: 20px; margin-right: 10px;"></i> ensome@info.co.us</p>
+                    <p><i class="bi bi-telephone-fill"><img src="IMG\icon_call.png" style="width: 20px; height: 20px; margin-right: 10px;"></i> +1 601-201-5580</p>
+                    <p><i class="bi bi-geo-alt-fill"><img src="IMG\icon_location.png" style="width: 20px; height: 20px; margin-right: 10px;"></i> 1642 Washington Ave, Jackson, MS</p>
+                </div>
+            </div>
+
+            <!-- ฝั่งขวา: ฟอร์มติดต่อ -->
+            <div class="col-md-6">
+                <form class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="form-label">Name</label>
+                            <input type="text" value="Andrea">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email</label>
+                            <input type="email" value="andrea@gmail.com">
+                        </div>
+                    </div>
+                    <label class="form-label">Theme</label>
+                    <input type="text" value="Job">
+                    
+                    <label class="form-label">Message</label>
+                    <textarea rows="1">Your message</textarea>
+
+                    <button type="submit" class="btn btn-send">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Subscribe to our newsletter-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter & Footer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            background-color: #F8F9FA;
+        }
+
+        /* ====== NEWSLETTER SECTION ====== */
+        .newsletter {
+            background-color: #002B4E;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .newsletter h2 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-left: 300px;
+        }
+
+        .newsletter p {
+            font-size: 16px;
+            color: #B0C4DE;
+            max-width: 550px;
+            margin: 10px auto;
+            line-height: 1.6;
+            margin-left: 260px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            margin-top: -100px;
+            margin-left: 400px;
+        }
+
+        .newsletter-form input {
+            width: 250px;
+            padding: 12px;
+            border: none;
+            border-radius: 6px 0 0 6px;
+            font-size: 14px;
+        }
+
+        .newsletter-form button {
+            background: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 0 6px 6px 0;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* ====== FOOTER SECTION ====== */
+        .footer {
+            background-color: #002B4E;
+            color: white;
+            padding: 60px 10%;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+
+        .footer-column h4 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .footer-column p,
+        .footer-column a {
+            font-size: 14px;
+            color: #B0C4DE;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .footer-column a:hover {
+            color: white;
+        }
+
+        .footer-logo {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .footer-social i {
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* ====== FOOTER BOTTOM ====== */
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #B0C4DE;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #B0C4DE;
+        }
+
+        .footer-bottom a {
+            color: #B0C4DE;
+            text-decoration: none;
+            margin-left: 15px;
+            margin: -1px 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-social {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Newsletter Section --> 
+<section class="newsletter">
+    <h2>Subscribe to our newsletter</h2>
+    <p class="mt-4" style="margin-left: 200px;">Sed ut perspiciatis unde omnis iste natus error</p>
+    <p style="margin-left: 220px;">sit voluptatem accusantium doloremque laudantium.</p>
+    
+    <div class="newsletter-form">
+        <input type="email" placeholder="Your email">
+        <button>Send</button>
+    </div>
+</section>
+
+<!-- เส้นขั้น -->
+<hr style="width: 100%; margin: -0.8px auto; border: 1px solid #ddd;">
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- โลโก้ + Social Media -->
+        <div class="footer-column">
+            <img src="IMG\Logo_white.png" style="margin-top: -15px;" alt="Logo_Ensome">
+            <p class="mt-2">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+            <img src="IMG\icons social links.png" alt="Logo">
+            <div class="footer-social">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+            <h4>Quick link</h4>
+            <a href="#">Home</a>
+            <a href="#">Solutions</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacts</a>
+            <a href="#">Our team</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">FAQ</a>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+            <h4>Service</h4>
+            <a href="#">Pages</a>
+            <a href="#">Elements</a>
+            <a href="#">FAQ</a>
+            <a href="#">Pricing</a>
+            <a href="#">Site map</a>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-column">
+            <h4>Contact info</h4>
+            <p>ensome@info.co.us</p>
+            <p>+1 601-201-5580</p>
+            <p>1642 Washington Ave, Jackson, MS, 39201</p>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>Ensome© 2022 All Rights Reserved <a href="#">Privacy policy</a> <a href="#">Terms of use</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
+

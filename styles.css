@@ -1,0 +1,285 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    background-color: white;
+    margin: 0;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .text-section {
+    max-width: 60%;
+    padding-right: 2rem;
+  }
+  
+  .text-section h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  
+  .text-section p {
+    font-size: 1.1rem;
+    color: #6c757d;
+  }
+  
+  .btn-learn-more {
+    margin-top: 1rem;
+  }
+  
+  .custom-image {
+    width: 200%;
+    max-width: 600px;
+    margin-top: 2rem;
+  }
+  
+  .logo {
+    max-height: 50px;
+  }
+  
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .feature-title {
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  .feature-description {
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  
+  .feature-col {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .advantages-section {
+    background-color: #F1F6FA;
+    padding: 40px 0;
+  }
+  
+  .highlight-text {
+    background-color: #FFEB3B;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .advantages-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .highlight-name {
+    color: #FF5733;
+    font-weight: bold;
+  }
+  
+  .cursor-image {
+    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the image fits within the dimensions */
+    margin-top: 50px; /* Adds space above the image */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    display: block; /* Ensures the image behaves as a block element */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+}
+  .card {
+    border: 2px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  
+  .section-title {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .lead-text {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  footer {
+    background-color: #F1F6FA;
+    color: #343a40;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .text-section {
+      max-width: 100%;
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+  
+    .custom-image {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  
+    .section-title {
+      font-size: 1.8rem;
+    }
+  
+    .btn-learn-more {
+      margin-top: 1rem;
+    }
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Footer Specific Styles */
+  .logo img {
+    width: 100%;
+    max-width: 150px;
+  }
+  
+  .contact-info p {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .list-unstyled li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .list-unstyled li a:hover {
+    color: #185CFF;
+  }
+  
+  .social-icon {
+    margin-right: 10px;
+  }
+  
+  .social-icon img {
+    width: 25px;
+  }
+  
+  footer {
+    background-color: #F9FBFD;
+  }
+  
+  footer a {
+    color: #185CFF;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .text-center {
+    margin-top: 30px;
+  }
+  
+  /* Contact Section Specific Styles */
+  .contact-section {
+    background-color: #F9FBFD;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .btn-primary {
+    background-color: #185CFF;
+    border-color: #185CFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #003C8F;
+    border-color: #003C8F;
+  }
+  
+  /* Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    .contact-section .row {
+      flex-direction: column;
+    }
+  
+    .contact-form {
+      margin-top: 20px;
+    }
+  }
+  
